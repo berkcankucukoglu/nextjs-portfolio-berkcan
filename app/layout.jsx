@@ -1,9 +1,9 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Navbar/Header";
 
 const roboto = Roboto({
   subsets: ["latin"],
-  src: "./fonts/GeistVF.woff",
   weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-roboto",
 });
@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
           </div>
         </div>
 
+        <Header />
         {children}
       </body>
     </html>
