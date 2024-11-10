@@ -1,3 +1,4 @@
+"use client"
 import Link from "next/link"
 import { Button } from "../ui/button";
 import Nav from "./Nav";
@@ -10,7 +11,7 @@ function Header() {
             <div className="container mx-auto flex items-center justify-between">
                 {/* Home Btn as Name for Desktop */}
                 <Link href="/">
-                    <h1 className="font-semibold text-2xl">
+                    <h1 className="font-semibold text-2xl md:transform md:transition-transform md:duration-300 md:hover:scale-110">
                         {USER_INFO.name}&nbsp;{USER_INFO.surname}
                     </h1>
                 </Link>

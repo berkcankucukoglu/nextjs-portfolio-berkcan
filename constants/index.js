@@ -1,7 +1,3 @@
-// import project1 from '../assets/projects/5aoE9pwrER4-unsplash.jpg';
-// import project2 from '../assets/projects/aVf9CI1kZ0s-unsplash.jpg';
-// import project3 from '../assets/projects/IhxM7w392e0-unsplash.jpg';
-// import project4 from '../assets/projects/sK0dKnDOcEM-unsplash.jpg';
 import profilePicture from '../public/assets/profilePicture.jpg';
 
 export const USER_INFO = {
@@ -29,36 +25,6 @@ export const EXPERIENCES = [
     company: 'Company Inc.',
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium, quasi voluptatem ratione sequi a maxime, temporibus provident id officiis quo ut dignissimos?`,
     technologies: ['HTML', 'CSS', 'C#', 'MySQL'],
-  },
-];
-
-export const PROJECTS = [
-  {
-    title: 'ABC Website',
-    // image: project1,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium, quasi voluptatem ratione sequi a maxime, temporibus provident id officiis quo ut dignissimos?',
-    technologies: ['HTML', 'CSS', 'React'],
-  },
-  {
-    title: 'ABC Platform',
-    // image: project2,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    technologies: ['Vue.js', 'MySQL'],
-  },
-  {
-    title: 'ABC App',
-    // image: project3,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium.',
-    technologies: ['HTML', 'CSS', 'Angular'],
-  },
-  {
-    title: 'ABC Test',
-    // image: project4,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium.',
-    technologies: ['HTML', 'CSS', 'Angular'],
   },
 ];
 

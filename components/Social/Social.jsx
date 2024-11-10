@@ -10,6 +10,7 @@ function Social() {
                     <Link
                         key={index}
                         href={item.path}
+                        target="_blank"
                         className="w-11 h-11 border border-stone-400 rounded-full flex justify-center items-center text-white text-2xl hover:border-accent hover:text-accent-hover hover:transition-all duration-200">
                         {item.icon}
                     </Link>

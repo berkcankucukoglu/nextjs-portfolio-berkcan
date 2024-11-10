@@ -18,7 +18,7 @@ function Photo() {
                     opacity: 1,
                     transition: { duration: 0.25, ease: "easeInOut" }
                 }}
-                className="w-72 h-72 sm:w-96 sm:h-96 xl:w-[498px] xl:h-[498px]">
+                className="w-72 h-72 sm:w-96 sm:h-96 xl:w-[498px] xl:h-[498px] relative">
                 <Image
                     src={USER_INFO.image}
                     priority

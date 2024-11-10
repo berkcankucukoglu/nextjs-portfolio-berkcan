@@ -20,7 +20,7 @@ function Home() {
             <p className="max-w-lg mb-9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel iste eum quia ea quibusdam in veritatis voluptate corporis excepturi, recusandae repellat quisquam, quam accusamus dolor ipsum nobis temporibus aut quae minus hic, officiis aspernatur. Repellendus, maiores fuga, deleniti placeat ullam magni saepe culpa ea nam ipsum aspernatur. Reiciendis, nihil assumenda?</p>
             {/* Btns/Links */}
             <div className="flex flex-col lg:flex-row items-center gap-8">
-              <Button variant="outline_stone" size="lg" className="flex items-center gap-2 uppercase">
+              <Button variant="outline_transparent" size="lg" className="flex items-center gap-2 uppercase">
                 <span className="text-lg">Download Resume</span>
                 <FontAwesomeIcon icon={faDownload} className="w-auto h-6 text-lg" />
               </Button>

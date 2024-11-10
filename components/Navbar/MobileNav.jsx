@@ -21,7 +21,7 @@ function MobileNav() {
                 <div className="my-20 text-center text-2xl">
                     {/* Home Btn as Name for Mobile */}
                     <Link href="/">
-                        <SheetTrigger className="font-semibold text-xl">{USER_INFO.name}&nbsp;{USER_INFO.surname}</SheetTrigger>
+                        <SheetTrigger className="font-semibold text-xl transform transition-transform duration-300 hover:scale-110">{USER_INFO.name}&nbsp;{USER_INFO.surname}</SheetTrigger>
                     </Link>
                 </div>
                 <nav className="flex flex-col justify-center items-center gap-8">
