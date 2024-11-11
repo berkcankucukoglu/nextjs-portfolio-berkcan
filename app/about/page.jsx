@@ -1,7 +1,6 @@
 "use client"
 import { USER_INFO, EXPERIENCES, EDUCATION, LICENSURE } from "@/constants";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
