@@ -14,13 +14,15 @@ const buttonVariants = cva(
         outline: "border border-accent bg-transparent text-accent hover:bg-accent hover:text-primary",
         outline_transparent: "border border-stone-400 bg-transparent text-white hover:border-accent hover:text-accent-hover hover:transition-all duration-200",
         outline_stone: "border border-stone-400 bg-transparent text-white hover:border-accent hover:text-accent-hover hover:bg-stone-800",
+        outline_tab: "bg-[#27272c] text-white font-medium",
       },
       size: {
         default: "h-10 rounded-full px-6",
         sm: "h-9 rounded-md px-6",
         lg: "h-11 rounded-md px-8 text-sm uppercase tracking-[2px]",
         icon: "h-10 w-10",
-        back_to_top: "h-full w-full rounded-full p-3"
+        back_to_top: "h-full w-full rounded-full p-3",
+        outline_tab: "h-12 rounded-lg p-3"
       },
     },
     defaultVariants: {

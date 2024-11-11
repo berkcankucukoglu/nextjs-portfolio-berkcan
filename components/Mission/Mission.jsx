@@ -1,5 +1,5 @@
 "use client"
-import { HERO_MISSIONS } from "@/constants/heroMissions";
+import { HERO_MISSIONS } from "@/constants/heroConstants";
 import { motion } from "framer-motion";
 
 function Mission() {

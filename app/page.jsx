@@ -5,6 +5,7 @@ import Social from "@/components/Social/Social";
 import Photo from "@/components/Photo/Photo";
 import Mission from "@/components/Mission/Mission";
 import { USER_INFO } from "@/constants";
+import { HERO_CONTENT } from "@/constants/heroConstants";
 
 function Home() {
   return (
@@ -17,14 +18,23 @@ function Home() {
             <h1 className="h1 mb-6 text-stone-300">
               {USER_INFO.name + ' ' + USER_INFO.surname}
             </h1>
-            <p className="max-w-lg mb-9">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel iste eum quia ea quibusdam in veritatis voluptate corporis excepturi, recusandae repellat quisquam, quam accusamus dolor ipsum nobis temporibus aut quae minus hic, officiis aspernatur. Repellendus, maiores fuga, deleniti placeat ullam magni saepe culpa ea nam ipsum aspernatur. Reiciendis, nihil assumenda?</p>
+            <p
+              className="my-4 max-w-lg leading-relaxed"
+            >
+              {HERO_CONTENT[0].text}
+            </p>
+            <p
+              className="mb-4 max-w-lg leading-relaxed hidden md:block"
+            >
+              {HERO_CONTENT[1].text}
+            </p>
             {/* Btns/Links */}
-            <div className="flex flex-col lg:flex-row items-center gap-8">
+            <div className="flex flex-col sm:flex-row items-center gap-8 mt-9 sm:mb-8 lg:mb-0">
               <Button variant="outline_transparent" size="lg" className="flex items-center gap-2 uppercase">
                 <span className="text-lg">Download Resume</span>
                 <FontAwesomeIcon icon={faDownload} className="w-auto h-6 text-lg" />
               </Button>
-              <div className="mb-8 lg:mb-0">
+              <div className="mb-8 sm:mb-0">
                 <Social />
               </div>
             </div>

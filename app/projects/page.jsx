@@ -1,9 +1,7 @@
 "use client"
 import Link from "next/link"
-import { PROJECTS } from "@/constants/projects";
+import { PROJECTS } from "@/constants/projectsConstants";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 function Projecs() {
@@ -53,7 +51,7 @@ function Projecs() {
                                                 width={288}
                                                 sizes="100vw"
                                                 alt={project.title}
-                                                className="object-contain rounded"
+                                                className="object-contain rounded-lg"
                                             />
                                         </motion.div>
                                     </motion.div>
