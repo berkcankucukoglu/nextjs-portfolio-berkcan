@@ -16,10 +16,6 @@ export const NAV_LINKS = [
     path: '/research',
   },
   {
-    name: 'mission',
-    path: '/mission',
-  },
-  {
     name: 'contact',
     path: '/contact',
   },

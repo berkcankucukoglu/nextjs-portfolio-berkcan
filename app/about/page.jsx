@@ -41,7 +41,11 @@ function About() {
                             </div>
                             <div className="h-96 w-full">
                                 <ul className="flex flex-col gap-7">
-                                    {USER_INFO.info.map((item, index) => {
+                                    <li className="flex items-center justify-center md:justify-start gap-4">
+                                        <span className="text-white text-xl capitalize tracking-tighte sm:tracking-normal leading-10">Name:</span>
+                                        <span className="text-stone-200 tracking-tighter sm:tracking-normal leading-10">{USER_INFO.name}&nbsp;{USER_INFO.surname}</span>
+                                    </li>
+                                    {USER_INFO.contactInfo.map((item, index) => {
                                         return (
                                             <li
                                                 key={index}

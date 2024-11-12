@@ -1,6 +1,6 @@
 "use client"
 import Link from "next/link"
-import { EXTERNAL_LINKS } from "@/constants/externalLinks";
+import { EXTERNAL_LINKS } from "@/constants";
 
 function Social() {
     return (
