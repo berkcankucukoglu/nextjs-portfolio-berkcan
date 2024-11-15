@@ -12,12 +12,12 @@ import {
   faPersonDigging,
 } from '@fortawesome/free-solid-svg-icons';
 
-import profilePicture from '../public/assets/profilePicture.jpg';
+import profilePicture from '../public/assets/profilePicture.webp';
 import geomesLogo from '../public/assets/certifications/geomes_logo.webp';
 import motLogo from '../public/assets/certifications/ministry_of_transport_and_infrastructure_turkey_logo.webp';
 import wissenLogo from '../public/assets/certifications/wissen_teknoloji_logo.webp';
 
-export const SITE_LAST_UPDATE_TIME = `12 Nov 2024`;
+export const SITE_LAST_UPDATE_TIME = `15 Nov 2024`;
 
 export const USER_INFO = {
   name: 'Berkcan',
