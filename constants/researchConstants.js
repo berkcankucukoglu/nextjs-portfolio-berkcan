@@ -1,27 +1,12 @@
-import researchImage_1 from '../public/assets/research/image1.jpg';
-import researchImage_2 from '../public/assets/research/image2.jpg';
+import vissim_research from '../public/assets/research/vissim_research.gif';
 
 export const RESEARCHES = [
   {
-    num: '01',
-    category: 'Frontend',
-    title: 'Research_1',
-    description:
-      'Leveraging engineering and software expertise to create innovative, workflow-enhancing applications that drive productivity and efficiency.',
-    stack: ['HTML', 'CSS', 'React'],
-    image: researchImage_1,
-    live: ``,
-    github: ``,
-  },
-  {
-    num: '02',
-    category: 'Backend',
-    title: 'Research_2',
-    description:
-      'Leveraging engineering and software expertise to create innovative, workflow-enhancing applications that drive productivity and efficiency.',
-    stack: ['HTML', 'CSS', 'React'],
-    image: researchImage_2,
-    live: ``,
-    github: ``,
+    category: 'transportation engineering',
+    title:
+      'Determining The Highway Capacity and Examining The Improvements Via Connected and Autonomous Vehicles',
+    description: `My master's thesis focused on freeway capacity improvements, micro simulations and usage of autonomous vehicles. You can find my thesis on Isik University's website.`,
+    image: vissim_research,
+    url: `https://acikerisim.isikun.edu.tr/items/584f41ed-ef85-4987-9668-d850386f185a`,
   },
 ];

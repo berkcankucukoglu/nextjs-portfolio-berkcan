@@ -31,7 +31,7 @@ function BackToTop() {
                     whileInView={{ opacity: 1, x: 0 }}
                     initial={{ opacity: 0, x: 25 }}
                     transition={{ duration: 0.75 }}
-                    className='fixed right-0 bottom-24 rounded-l-full pr-5 py-1 pl-1 bg-stone-800 border-l-2 border-accent'>
+                    className='fixed right-0 bottom-20 sm:bottom-16 md:bottom-10 rounded-l-full pr-5 py-1 pl-1 bg-stone-800 border-l-2 border-accent z-10'>
                     <Button
                         variant="outline_stone"
                         size="back_to_top"

@@ -1,11 +1,11 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Social from "@/components/Social/Social";
 import Photo from "@/components/Photo/Photo";
 import Mission from "@/components/Mission/Mission";
-import { USER_INFO } from "@/constants";
-import { HERO_CONTENT } from "@/constants/heroConstants";
+import { USER_INFO, HERO_CONTENT } from "@/constants";
 
 function Home() {
   return (
@@ -30,7 +30,24 @@ function Home() {
             </p>
             {/* Btns/Links */}
             <div className="flex flex-col sm:flex-row items-center gap-8 mt-9 sm:mb-8 lg:mb-0">
-              <Button variant="outline_transparent" size="lg" className="flex items-center gap-2 uppercase">
+              <Button
+                variant="outline_transparent"
+                size="lg"
+                className="flex items-center gap-2 uppercase"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const confirmDownload = window.confirm(
+                    'PDF Format – Download Resume ?'
+                  );
+                  if (confirmDownload) {
+                    const downloadLink = document.createElement('a');
+                    downloadLink.href = '/berkcan_kucukoglu_resume.pdf';
+                    downloadLink.setAttribute('download', 'berkcan_kucukoglu_resume.pdf');
+                    document.body.appendChild(downloadLink);
+                    downloadLink.click();
+                    document.body.removeChild(downloadLink);
+                  }
+                }}>
                 <span className="text-lg">Download Resume</span>
                 <FontAwesomeIcon icon={faDownload} className="w-auto h-6 text-lg" />
               </Button>

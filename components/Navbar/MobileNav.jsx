@@ -3,17 +3,16 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import { Sheet, SheetTrigger, SheetContent, SheetTitle, SheetDescription } from '../ui/sheet';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartSimple } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { NAV_LINKS } from '@/constants/navLinks';
 import { USER_INFO } from '@/constants';
-
 
 function MobileNav() {
     const pathName = usePathname();
     return (
         <Sheet>
             <SheetTrigger className="flex justify-center items-center">
-                <FontAwesomeIcon icon={faChartSimple} size='2xl' rotation={270} className='hover:text-accent-hover' />
+                <FontAwesomeIcon icon={faBars} size='2xl' className='hover:text-accent-hover' />
             </SheetTrigger>
             <SheetContent className="flex flex-col">
                 <SheetTitle className="sr-only">{null}</SheetTitle>

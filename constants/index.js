@@ -7,12 +7,17 @@ import {
 import {
   faSquarePhone,
   faSquareEnvelope,
+  faMicrochip,
+  faDna,
+  faPersonDigging,
 } from '@fortawesome/free-solid-svg-icons';
 
 import profilePicture from '../public/assets/profilePicture.jpg';
 import geomesLogo from '../public/assets/certifications/geomes_logo.webp';
 import motLogo from '../public/assets/certifications/ministry_of_transport_and_infrastructure_turkey_logo.webp';
 import wissenLogo from '../public/assets/certifications/wissen_teknoloji_logo.webp';
+
+export const SITE_LAST_UPDATE_TIME = `12 Nov 2024`;
 
 export const USER_INFO = {
   name: 'Berkcan',
@@ -22,7 +27,7 @@ export const USER_INFO = {
   contactInfo: [
     {
       fieldName: 'Email',
-      fieldValue: 'berkcankucukoglu@gmail.com',
+      fieldValue: `berkcankucukoglu@gmail.com`,
       icon: <FontAwesomeIcon icon={faSquareEnvelope} />,
     },
     {
@@ -53,54 +58,112 @@ export const EXTERNAL_LINKS = [
 
 export const EXPERIENCES = [
   {
-    timespan: 'Jan 2021 - Present',
+    timespan: 'Jun 2024 - Present',
     role: 'Full Stack Developer',
-    company: 'Company Inc.',
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium, quasi voluptatem ratione sequi a maxime, temporibus provident id officiis quo ut dignissimos?`,
-    technologies: ['Javascript', 'React.js', 'MsSQL'],
+    company: 'Faturamatik Elektronik Para ve Ödeme Kuruluşu',
+    description: `I’m currently a full-stack developer on the sigortalarburada.com project, building an insurance portal to improve customer experience and streamline policy management.`,
+    technologies: [
+      'C#',
+      '.NET Core',
+      'ASP.NET MVC',
+      'Language Integrated Query (LINQ)',
+      'ASP.NET Web API',
+    ],
   },
   {
-    timespan: 'Jan 2020 - Jan 2021',
+    timespan: 'Apr 2023 - Feb 2024',
     role: 'Full Stack Developer',
-    company: 'Company Inc.',
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium, quasi voluptatem ratione sequi a maxime, temporibus provident id officiis quo ut dignissimos?`,
-    technologies: ['HTML', 'CSS', 'C#', 'MySQL'],
+    company: 'DISC Akademi Eğitim ve Yazılım',
+    description: `I had the privilege of working with a prominent HR company renowned for its comprehensive approach to personality tests and talent assessments. As a full-stack developer, I actively contributed to the development of the 'Yetenex' project, a dynamic job portal and application tracking system.`,
+    technologies: [
+      'C#',
+      '.NET Core',
+      'React.js',
+      'MySQL',
+      'xUnit',
+      'Tailwind CSS',
+      'Language Integrated Query (LINQ)',
+      'ASP.NET Web API',
+    ],
+  },
+  {
+    timespan: 'Aug 2022 - Mar 2023',
+    role: 'Contract - Trainee',
+    company: 'Wissen Akademie',
+    description: `I completed a course that covered programming with C#, GitHub version control, front-end technologies (HTML, CSS, Bootstrap, JavaScript), database management with MsSQL, ADO.NET, Entity Framework, design patterns like Singleton and Factory, and SOLID principles.`,
+    technologies: [
+      'C#',
+      '.NET Core',
+      'MsSQL',
+      'Entity Framework (EF) Core',
+      'Language Integrated Query (LINQ)',
+      'ASP.NET MVC',
+      'ASP.NET Web API',
+      'JavaScript',
+      'HTML5',
+      'Cascading Style Sheets (CSS)',
+    ],
+  },
+  {
+    timespan: 'Dec 2019 – Jun 2022',
+    role: 'Transportation Engineer',
+    company: 'Emay International Engineering & Consulting',
+    description: `General applications of BIM for civil & transportation engineering projects. Managed Infraworks 3D modeling, VR implementations for metro station presentations. Technical drawings about metro projects. Drone flights for terrain modeling, work-progress tracking and graphic design. Attending international meetings and negotiations. Notable projects: Istanbul Metro-Rail Systems Design Group, Architectural Detailing Projects, Technical Drawings, and Presentations.`,
+    technologies: [
+      'BIM',
+      'business analysis',
+      'project management',
+      'figma',
+      'UI',
+      'UX',
+    ],
+  },
+  {
+    timespan: 'Oct 2018 – Dec 2019',
+    role: 'Civil Engineer',
+    company: 'Prizma Engineering',
+    description: `Specialized in traffic safety planning and signage for new highway design projects. Conducted and planned drainage system analysis on highways and junctions.`,
+    technologies: ['traffic studies', 'transportation engineering'],
   },
 ];
 
 export const EDUCATION = [
   {
-    timespan: 'Jan 2021 - Present',
-    faculty: 'Engineering',
-    school: 'University',
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium, quasi voluptatem ratione sequi a maxime, temporibus provident id officiis quo ut dignissimos?`,
+    timespan: 'Aug 2022 - Mar 2023',
+    faculty: 'Wissen Akademie',
+    school: `Bahcesehir University / Full-Stack Developer Bootcamp`,
+    description: `By earning a Certificate of Achievement, I’ve proven my commitment to developing the essential skills needed for professional success.`,
+    link: ``,
   },
   {
-    timespan: 'Jan 2020 - Jan 2021',
-    faculty: 'Engineering',
-    school: 'University',
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium, quasi voluptatem ratione sequi a maxime, temporibus provident id officiis quo ut dignissimos?`,
+    timespan: 'Jan 2020 - Aug 2022',
+    faculty: 'Transportation and Highway Engineering',
+    school: 'Isik University / Master of Science - MS',
+    description: `Thesis Topic: Determining The Highway Capacity and Examining The Improvements Via Connected and Autonomous Vehicles.`,
+    link: `https://acikerisim.isikun.edu.tr/items/584f41ed-ef85-4987-9668-d850386f185a`,
   },
   {
-    timespan: 'Jan 2020 - Jan 2021',
-    faculty: 'Engineering',
-    school: 'University',
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium, quasi voluptatem ratione sequi a maxime, temporibus provident id officiis quo ut dignissimos?`,
+    timespan: 'Feb 2019 - Jan 2021',
+    faculty: 'Web/Multimedia Management and Webmaster',
+    school: `Anadolu University / Associate's degree`,
+    description: ``,
+    link: ``,
   },
   {
-    timespan: 'Jan 2020 - Jan 2021',
-    faculty: 'Engineering',
-    school: 'University',
-    description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium, quasi voluptatem ratione sequi a maxime, temporibus provident id officiis quo ut dignissimos?`,
+    timespan: 'Sep 2011 - Jun 2018',
+    faculty: `Civil Engineering`,
+    school: `Isik University / Bachelor's degree`,
+    description: ``,
+    link: ``,
   },
 ];
 
 export const LICENSURE = [
   {
     issueDate: 'Mar 2023',
-    issuingOrganization: 'Wissen Akademie',
-    title: `Full Stack Developer`,
-    credentialText: `BAU Bright Bootcamp`,
+    issuingOrganization: 'Wissen Akademie - Bahcesehir University (BAU)',
+    title: `Full Stack Developer Certificate`,
+    credentialText: `BAU Bright Bootcamp - Full Stack Training Program`,
     image: wissenLogo,
   },
   {
@@ -113,38 +176,149 @@ export const LICENSURE = [
   },
   {
     issueDate: 'Aug 2020',
-    issuingOrganization: 'Geomes Mühendislik Hizmetleri',
+    issuingOrganization: 'Geomes Engineering Services',
     title: `UAV-1 Commercial Pilot Certificate`,
     credentialText: `Credential ID: TR-IHA1T2749951`,
     image: geomesLogo,
   },
 ];
 
+export const ABOUT_CONTENT = `I'm Berkcan, and I work as a software developer at the moment. I have a special background that combines tech and engineering. During my master's program, I focused on Autonomous Vehicles after initially studying Civil Engineering. My goal is to push for effective, significant solutions that directly advance society and helping not only those around me but also supporting my own growth and success. My journey into software development has been driven by a passion for innovation, and I thrive on tackling challenges that blend engineering and code. In my spare time, I like to work on personal software projects, play video games, and participate in outdoor sports to keep active.`;
+
+export const ABOUT_MISSIONS = [
+  {
+    title: 'What is my mission?',
+    description: `Support my own growth and achievements while simultaneously providing effective, meaningful solutions that directly impact society and empower those around me.`,
+    items: [],
+  },
+  {
+    title: 'What is my vision?',
+    description: `Bridge the gap between engineering and software, advancing fields like AI and AV to create lasting, positive impacts on society.`,
+    items: [],
+  },
+  {
+    title: 'What are my values?',
+    description: ``,
+    items: [
+      {
+        head: `curiosity`,
+        text: `I always seek new knowledge and explore uncharted territories to drive meaningful advancements.`,
+      },
+      {
+        head: `purpose`,
+        text: `Prioritize work that has a tangible, positive impact on society and contributes to solutions that matter.`,
+      },
+      {
+        head: `collaboration`,
+        text: `Foster a culture of teamwork, where knowledge sharing and mutual support fuel collective success.`,
+      },
+      {
+        head: `efficiency`,
+        text: `Focus on what truly matters, eliminating unnecessary work and dedicating time to meaningful challenges.`,
+      },
+      {
+        head: `quality`,
+        text: `Be recognized for tackling complex challenges, and inspire others to aim for excellence.`,
+      },
+      {
+        head: `accountability`,
+        text: `I take responsibility for my work and approach every challenge with honesty and transparency.`,
+      },
+    ],
+  },
+];
+
+export const HERO_CONTENT = [
+  {
+    text: `My name is Berkcan Küçükoğlu, and I blend an engineering foundation with a focus on software development. This transition allows me to bring a unique perspective to my work in developing technology-driven solutions, combining my engineering expertise with software skills.`,
+  },
+  {
+    text: `Currently, I’m working as a software developer. Before moving into software, I gained valuable experience as a transportation engineer in both technical offices and on-site settings, where I developed strong project management and workflow skills.`,
+  },
+];
+
+export const HERO_MISSIONS = [
+  {
+    title: 'Working for Efficiency',
+    description:
+      'Leveraging engineering and software expertise to create innovative, workflow-enhancing applications that drive productivity and efficiency.',
+    icon: <FontAwesomeIcon icon={faPersonDigging} />,
+  },
+  {
+    title: 'Advancing Technology',
+    description:
+      'Pursuing projects that bridge engineering and software, shaping sustainable, impactful solutions for real-world challenges.',
+    icon: <FontAwesomeIcon icon={faMicrochip} />,
+  },
+  {
+    title: 'Continuous Evolution',
+    description:
+      'Committing to learning new tech, embracing challenges, and expanding my expertise to make a meaningful impact in the industry.',
+    icon: <FontAwesomeIcon icon={faDna} />,
+  },
+];
+
 export const CONTACT_TEXT = `If you didn’t find the information you’re looking for, feel free to reach out directly. I’m always open to discussing my work, experience, or any questions you might have.`;
 
 export const CONTACT_PRIVACRY = [
-  `Information provided through the contact form is to be used only and exclusively for professional communication.`,
+  `Information provided through the contacts are to be used only and exclusively for professional communication.`,
   `If offensive or irrelevant messages are received, I reserve the right to stop communicating with you or choose not to respond to your messages.`,
-  `For more information, please visit to Terms of Use and Privacy Policy pages down below.`,
 ];
 
 export const PRIVACRY_CONTENT = [
   {
-    title: `Privacy Policy`,
-    listItems: [
-      `Your privacy is valued, and this site does not collect sensitive personal data.`,
-      `Information provided through the contact form will only be used for professional communication.`,
-      `Misuse of the contact options, including sending irrelevant or excessive messages, may result in restrictions on further communication attempts.`,
-      `Please reach out with genuine interest and respect for privacy.`,
-    ],
-  },
-  {
     title: `Terms of Use`,
     listItems: [
-      `This website is intended to showcase my professional experience and skills.`,
+      `This website is intended to showcase professional experience and skills.`,
       `By using this website, you agree to using it in a polite and ethical manner.`,
       `If offensive or irrelevant messages are received, I reserve the right to stop communicating with you or choose not to respond to your messages.`,
       `I reserve the right to block any communication channels to maintain a productive environment.`,
     ],
   },
+  {
+    title: `Privacy Policy`,
+    listItems: [
+      `Your privacy is valued, and this site does not collect any data.`,
+      `Please reach out with genuine interest and respect for privacy.`,
+    ],
+  },
 ];
+
+export const FOOTER_CONTENT = `“Victory is for those who can say "Victory is mine". Success is for those who can begin saying "I will succeed" and say "I have succeeded" in the end.”`;
+
+export const FOOTER_AUTHOR = `Mustafa Kemal Atatürk: The First President and Founder of the Republic of Turkey.`;
+
+export const CURRENT_DATE = {
+  formattedDate: getFormattedDate(),
+  year: getYear(),
+};
+
+function getFormattedDate() {
+  const today = new Date();
+  const day = String(today.getDate()).padStart(2, '0');
+  const months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
+  const month = months[today.getMonth()];
+  const year = today.getFullYear();
+
+  return `${day} ${month} ${year}`;
+}
+
+function getYear() {
+  const today = new Date();
+  const year = today.getFullYear();
+
+  return `${year}`;
+}

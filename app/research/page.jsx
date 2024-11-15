@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faBookBookmark } from "@fortawesome/free-solid-svg-icons";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -22,58 +22,38 @@ function Research() {
         <motion.section
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.5, ease: "easeIn" } }}
-            className='min-h-20 flex flex-col justify-center py-12 xl:px-0'>
+            className='min-h-[80vh] flex flex-col justify-center py-12 xl:px-0'>
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row xl:gap-8">
                     <div className="w-full xl:w-1/2 xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
                         <div className='flex flex-col gap-8 h-1/2'>
                             {/* outline num */}
-                            <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                                {research.num}
-                            </div>
-                            {/* category */}
-                            <h2 className='text-5xl font-bold leading-none text-white group-hover:text-accent transition-all duration-300 capitalize'>
-                                {research.category} research
+                            <h2 className="capitalize text-5xl leading-none font-extrabold text-transparent text-outline">
+                                {research.category}
                             </h2>
+                            {/* category */}
+                            <p className='text-xl font-semibold leading-relaxed text-white capitalize'>
+                                {research.title}
+                            </p>
                             {/* description */}
                             <p className="text-white">{research.description}</p>
-                            {/* stack */}
-                            <ul className='flex gap-4'>
-                                {research.stack.map((item, index) => {
-                                    return (
-                                        <li key={index} className='text-xl text-accent'>
-                                            {item}
-                                            {index !== research.stack.length - 1 && ","}
-                                        </li>
-                                    );
-                                })}
-                            </ul>
-                            {/* border */}
-                            <div className="border border-stone-300"></div>
                             {/* buttons */}
                             <div className='flex items-center gap-4'>
                                 {/* live research btn */}
-                                <Link href={research.live}>
+                                <Link
+                                    target='_blank'
+                                    href={research.url}
+                                    className='w-full sm:w-72 rounded-lg bg-stone-700 flex justify-center items-center group'>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
-                                            <TooltipTrigger className='w-20 h-20 rounded-full bg-stone-700 flex justify-center items-center group'>
-                                                <FontAwesomeIcon icon={faArrowRight} className='text-white text-3xl group-hover:text-accent' />
+                                            <TooltipTrigger>
+                                                <span className='group-hover:text-accent capitalize flex items-center text-xl p-1'>
+                                                    <FontAwesomeIcon icon={faBookBookmark} />&nbsp;
+                                                    find my research
+                                                </span>
                                             </TooltipTrigger>
                                             <TooltipContent>
-                                                <p>Live research</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </Link>
-                                {/* github research btn */}
-                                <Link href={research.github}>
-                                    <TooltipProvider delayDuration={100}>
-                                        <Tooltip>
-                                            <TooltipTrigger className='w-20 h-20 rounded-full bg-stone-700 flex justify-center items-center group'>
-                                                <FontAwesomeIcon icon={faArrowRight} className='text-white text-3xl group-hover:text-accent' />
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p>Github Repo</p>
+                                                <p className='capitalize'>research page</p>
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
@@ -91,17 +71,18 @@ function Research() {
                             {RESEARCHES.map((item, index) => {
                                 return (
                                     <SwiperSlide key={index} className='w-full'>
-                                        <div className='h-[460px] relative group flex justify-center items-center bg-stone-600'>
+                                        <div className='h-[460px] relative group flex justify-center items-center bg-stone-600 rounded-xl'>
                                             {/* overlay */}
                                             <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'>
 
                                             </div>
                                             {/* image */}
-                                            <div className='relative w-full h-full'>
+                                            <div className='relative w-full h-full rounded-xl'>
                                                 <Image
                                                     src={research.image}
                                                     fill
-                                                    className='object-cover'
+                                                    unoptimized
+                                                    className='object-cover rounded-xl'
                                                     alt={research.title}>
                                                 </Image>
                                             </div>
@@ -110,7 +91,9 @@ function Research() {
                                 );
                             })}
                             {/* slider buttons */}
-                            <ResearchSliderButtons containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-2xl w-[44px] h-[44px] flex justify-center items-center transition-all" iconStyles="text-primary" />
+                            {RESEARCHES.length > 1 &&
+                                <ResearchSliderButtons containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none" btnStyles="bg-accent hover:bg-accent-hover text-primary text-2xl w-[44px] h-[44px] flex justify-center items-center transition-all" iconStyles="text-primary" />
+                            }
                         </Swiper>
                     </div>
                 </div>

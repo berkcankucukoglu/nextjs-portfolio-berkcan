@@ -1,38 +1,32 @@
-import project1 from '../public/assets/projects/5aoE9pwrER4-unsplash.jpg';
-import project2 from '../public/assets/projects/aVf9CI1kZ0s-unsplash.jpg';
-import project3 from '../public/assets/projects/IhxM7w392e0-unsplash.jpg';
-import project4 from '../public/assets/projects/sK0dKnDOcEM-unsplash.jpg';
+import github_picture from '../public/assets/projects/github_project.webp';
+import infra_gif from '../public/assets/projects/infraworks_project.gif';
+import vissim_picture from '../public/assets/projects/vissim_project.webp';
 
 export const PROJECTS = [
   {
-    title: 'ABC Website',
-    image: project1,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium, quasi voluptatem ratione sequi a maxime, temporibus provident id officiis quo ut dignissimos?',
-    technologies: ['HTML', 'CSS', 'React'],
+    title: 'My GitHub Page',
+    image: github_picture,
+    description: `Visit my GitHub page to explore all my recent projects!`,
+    technologies: ['C#', 'JavaScript', 'TypeScript', 'CSS'],
+    url: 'https://github.com/berkcankucukoglu',
+  },
+  {
+    title: 'Vissim & Autonomous Vehicles',
+    image: vissim_picture,
+    description: `My master's thesis focused on freeway capacity improvements, micro simulations and usage of Autonomous Vehicles.`,
+    technologies: [
+      'Vissim',
+      'project management',
+      'traffic studies',
+      'transportation engineering',
+    ],
     url: '',
   },
   {
-    title: 'ABC Platform',
-    image: project2,
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    technologies: ['Vue.js', 'MySQL'],
-    url: '',
-  },
-  {
-    title: 'ABC App',
-    image: project3,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium.',
-    technologies: ['HTML', 'CSS', 'Angular'],
-    url: '',
-  },
-  {
-    title: 'ABC Test',
-    image: project4,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptates perferendis optio reprehenderit dolorem libero quia, praesentium.',
-    technologies: ['HTML', 'CSS', 'Angular'],
+    title: `Metro station environment landscaping`,
+    image: infra_gif,
+    description: `I used InfraWorks for presentations, cut and fill quantity calculations, verifying structure positions, landscaping, obtaining early land/ground .xml files, BIM, and many other purposes.`,
+    technologies: ['Civil 3D', 'InfraWorks', 'transportation engineering'],
     url: '',
   },
 ];
