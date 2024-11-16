@@ -75,7 +75,7 @@ export const EXPERIENCES = [
     timespan: 'Apr 2023 - Feb 2024',
     role: 'Full Stack Developer',
     company: 'DISC Akademi Eğitim ve Yazılım',
-    description: `I had the privilege of working with a prominent HR company renowned for its comprehensive approach to personality tests and talent assessments. As a full-stack developer, I actively contributed to the development of the 'Yetenex' project, a dynamic job portal and application tracking system.`,
+    description: `I had the privilege of working with a prominent HR company renowned for its comprehensive approach to personality tests and talent assessments. As a full-stack developer, I actively contributed to the development of the 'Yetenex' project, a dynamic job portal with application tracking system.`,
     technologies: [
       'C#',
       '.NET Core',
@@ -91,7 +91,7 @@ export const EXPERIENCES = [
     timespan: 'Aug 2022 - Mar 2023',
     role: 'Contract - Trainee',
     company: 'Wissen Akademie',
-    description: `I completed a course that covered programming with C#, GitHub version control, front-end technologies (HTML, CSS, Bootstrap, JavaScript), database management with MsSQL, ADO.NET, Entity Framework, design patterns like Singleton and Factory, and SOLID principles.`,
+    description: `I completed a semester long course that covered algorithms, programming with C#, GitHub version control, front-end technologies (HTML, CSS, Bootstrap, JavaScript), database management with MsSQL, ADO.NET, Entity Framework, design patterns like Singleton and Factory, and SOLID principles.`,
     technologies: [
       'C#',
       '.NET Core',
@@ -109,7 +109,7 @@ export const EXPERIENCES = [
     timespan: 'Dec 2019 – Jun 2022',
     role: 'Transportation Engineer',
     company: 'Emay International Engineering & Consulting',
-    description: `General applications of BIM for civil & transportation engineering projects. Managed Infraworks 3D modeling, VR implementations for metro station presentations. Technical drawings about metro projects. Drone flights for terrain modeling, work-progress tracking and graphic design. Attending international meetings and negotiations. Notable projects: Istanbul Metro-Rail Systems Design Group, Architectural Detailing Projects, Technical Drawings, and Presentations.`,
+    description: `Applied BIM knowledge in various civil and transportation engineering projects. Participated in international meetings and negotiations. Notable contributions included work with the Istanbul Metro-Rail Systems Design Group, as well as producing architectural detailing, technical drawings, and presentations.`,
     technologies: [
       'BIM',
       'business analysis',
@@ -123,7 +123,7 @@ export const EXPERIENCES = [
     timespan: 'Oct 2018 – Dec 2019',
     role: 'Civil Engineer',
     company: 'Prizma Engineering',
-    description: `Specialized in traffic safety planning and signage for new highway design projects. Conducted and planned drainage system analysis on highways and junctions.`,
+    description: `Specialized in traffic safety planning and signage for highway design projects. Conducted and planned drainage system analysis on junctions.`,
     technologies: ['traffic studies', 'transportation engineering'],
   },
 ];
@@ -184,7 +184,7 @@ export const LICENSURE = [
   },
 ];
 
-export const ABOUT_CONTENT = `I'm Berkcan, and I work as a software developer at the moment. I have a special background that combines tech and engineering. During my master's program, I focused on Autonomous Vehicles after initially studying Civil Engineering. My goal is to push for effective, significant solutions that directly advance society and helping not only those around me but also supporting my own growth and success. My journey into software development has been driven by a passion for innovation, and I thrive on tackling challenges that blend engineering and code. In my spare time, I like to work on personal software projects, play video games, and participate in outdoor sports to keep active.`;
+export const ABOUT_CONTENT = `I'm Berkcan, and I work as a software developer at the moment. I have a background that combines tech and engineering. During my master's program, I focused on Autonomous Vehicles after initially studying Civil Engineering. My goal is to push for effective, significant solutions that directly advance society and helping not only those around me but also supporting my own growth and success. My journey into software development has been driven by a passion for innovation, and I thrive on tackling challenges that blend engineering and code. In my spare time, I like to work on personal software projects, play video games, and participate in outdoor sports to keep active.`;
 
 export const ABOUT_MISSIONS = [
   {

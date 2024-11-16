@@ -65,7 +65,7 @@ function About() {
                             <div className="flex flex-col gap-8 text-center md:text-left mb-8">
                                 <h3 className="text-4xl font-bold">Hello, World!</h3>
                             </div>
-                            <ScrollArea className="h-[30rem] w-full">
+                            <ScrollArea className="h-[30rem] w-full pr-4">
                                 <motion.p
                                     whileInView={{ opacity: 1 }}
                                     initial={{ opacity: 0 }}
@@ -134,7 +134,7 @@ function About() {
                             <div className="flex flex-col gap-8 text-center md:text-left mb-8">
                                 <h3 className="text-4xl font-bold">Goals & Motivators</h3>
                             </div>
-                            <ScrollArea className="h-[30rem] w-full">
+                            <ScrollArea className="h-[30rem] w-full pr-4">
                                 {ABOUT_MISSIONS.map((item, index) => {
                                     return (
                                         <div
@@ -178,7 +178,7 @@ function About() {
                             <div className="flex flex-col text-center md:text-left mb-8">
                                 <h3 className="text-4xl font-bold">Experiences</h3>
                             </div>
-                            <ScrollArea className="h-[30rem] w-full">
+                            <ScrollArea className="h-[30rem] w-full pr-4">
                                 <div className="flex flex-col gap-7">
                                     {EXPERIENCES.map((exp, index) => (
                                         <div className="flex flex-wrap md:justify-between bg-[#232329] p-6 rounded-xl" key={index}>
@@ -235,7 +235,7 @@ function About() {
                             <div className="flex flex-col gap-8 text-center md:text-left mb-8">
                                 <h3 className="text-4xl font-bold">Education</h3>
                             </div>
-                            <ScrollArea className="h-[30rem] w-full">
+                            <ScrollArea className="h-[30rem] w-full pr-4">
                                 <ul className="flex flex-col gap-7">
                                     {EDUCATION.map((item, index) => {
                                         return (
@@ -310,7 +310,7 @@ function About() {
                             <div className="flex flex-col gap-8 text-center md:text-left mb-8">
                                 <h3 className="text-4xl font-bold">Certificates & Licensure</h3>
                             </div>
-                            <ScrollArea className="h-[30rem] w-full">
+                            <ScrollArea className="h-[30rem] w-full pr-4">
                                 <ul className="flex flex-col gap-7">
                                     {LICENSURE.map((item, index) => {
                                         return (
