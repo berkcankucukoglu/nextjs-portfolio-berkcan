@@ -18,6 +18,7 @@ import motLogo from '../public/assets/certifications/ministry_of_transport_and_i
 import wissenLogo from '../public/assets/certifications/wissen_teknoloji_logo.webp';
 
 export const SITE_LAST_UPDATE_TIME = `15 Nov 2024`;
+export const SITE_BASE_URL = `https://berkcankucukoglu.com`;
 
 export const USER_INFO = {
   name: 'Berkcan',
