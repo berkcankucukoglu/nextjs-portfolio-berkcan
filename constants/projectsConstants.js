@@ -6,8 +6,8 @@ export const PROJECTS = [
   {
     title: 'My GitHub Page',
     image: github_picture,
-    description: `Visit my GitHub page to explore all my recent projects!`,
-    technologies: ['C#', 'JavaScript', 'TypeScript', 'CSS'],
+    description: `Visit my GitHub page to explore all my recent projects.`,
+    technologies: [],
     url: 'https://github.com/berkcankucukoglu',
   },
   {
@@ -25,7 +25,7 @@ export const PROJECTS = [
   {
     title: `Metro station environment landscaping`,
     image: infra_gif,
-    description: `I used InfraWorks for presentations, cut and fill quantity calculations, verifying structure positions, landscaping, obtaining early land/ground .xml files, BIM, and many other purposes.`,
+    description: `I used Autodesk programs, particularly Civil3D and InfraWorks, for presentations, cut and fill quantity calculations, verifying structure positions, landscaping, obtaining early land/ground .xml files, BIM, and many other purposes.`,
     technologies: ['Civil 3D', 'InfraWorks', 'transportation engineering'],
     url: '',
   },
