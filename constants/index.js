@@ -24,7 +24,7 @@ export const USER_INFO = {
   name: 'Berkcan',
   surname: 'Küçükoğlu',
   image: profilePicture,
-  title: 'Full Stack Developer',
+  title: 'Software Developer',
   contactInfo: [
     {
       fieldName: 'Email',
@@ -75,7 +75,7 @@ export const EXPERIENCES = [
     timespan: 'Apr 2023 - Feb 2024',
     role: 'Full Stack Developer',
     company: 'DISC Akademi Eğitim ve Yazılım',
-    description: `I had the privilege of working with a prominent HR company renowned for its comprehensive approach to personality tests and talent assessments. As a full-stack developer, I actively contributed to the development of the 'Yetenex' project, a dynamic job portal with application tracking system(ATS).`,
+    description: `I had the privilege of working with a prominent HR company renowned for its comprehensive approach to personality tests and talent assessments. As a full-stack developer, I actively contributed to the development of the 'Yetenex' project, a dynamic job portal and application tracking system(ATS).`,
     technologies: [
       'C#',
       '.NET Core',
@@ -89,7 +89,7 @@ export const EXPERIENCES = [
     timespan: 'Aug 2022 - Mar 2023',
     role: 'Contract - Trainee',
     company: 'Wissen Akademie',
-    description: `I completed a semester long course that covered algorithms, programming with C#, GitHub version control, front-end technologies (HTML, CSS, Bootstrap, JavaScript), database management with MsSQL, ADO.NET, Entity Framework, design patterns like Singleton and Factory, and SOLID principles.`,
+    description: `I completed a semester long course that covered Algorithms, Programming with C#, GitHub version control, Front-end Technologies (HTML, CSS, Bootstrap, JavaScript), Database Management with MsSQL, ADO.NET, Entity Framework, design patterns like Singleton and Factory, and SOLID principles.`,
     technologies: [
       'C#',
       '.NET Core',
@@ -107,7 +107,7 @@ export const EXPERIENCES = [
     timespan: 'Dec 2019 – Jun 2022',
     role: 'Transportation Engineer',
     company: 'Emay International Engineering & Consulting',
-    description: `Applied BIM knowledge in various civil and transportation engineering projects. Participated in international meetings and negotiations. Notable contributions included work with the Istanbul Metro-Rail Systems Design Group, as well as producing architectural detailing, technical drawings, and presentations.`,
+    description: `Applied BIM knowledge in various Civil and Transportation Engineering projects. Participated in international meetings and negotiations. Notable contributions included work with the Istanbul Metro-Rail Systems Design Group, as well as producing architectural detailing, technical drawings, and presentations.`,
     technologies: [
       'BIM',
       'business analysis',
@@ -229,10 +229,10 @@ export const ABOUT_MISSIONS = [
 
 export const HERO_CONTENT = [
   {
-    text: `My name is Berkcan Küçükoğlu, and I blend an engineering foundation with a focus on software development. This transition allows me to bring a unique perspective to my work in developing technology-driven solutions, combining my engineering expertise with software skills.`,
+    text: `My name is Berkcan Küçükoğlu, and I blend an Engineering foundation with a focus on Software Development. This transition allows me to bring a unique perspective to my work in developing technology-driven solutions, combining my Engineering expertise with Software skills.`,
   },
   {
-    text: `Currently, I’m working as a software developer. Before moving into software, I gained valuable experience as a transportation engineer in both technical offices and on-site settings, where I developed strong project management and workflow skills.`,
+    text: `Currently, I’m working as a Software Developer. Before moving into software, I gained valuable experience as a Transportation Engineer in both technical offices and on-site settings, where I developed strong project management and workflow skills.`,
   },
 ];
 
