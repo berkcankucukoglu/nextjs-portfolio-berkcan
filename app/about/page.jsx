@@ -1,5 +1,5 @@
 "use client"
-import { USER_INFO, EXPERIENCES, EDUCATION, LICENSURE, CONTACT_PRIVACRY, ABOUT_CONTENT, CONTACT_TEXT, ABOUT_MISSIONS } from "@/constants";
+import { USER_INFO, EXPERIENCES, EDUCATION, LICENSURE, CONTACT_PRIVACRY, ABOUT_CONTENT, CONTACT_TEXT, ABOUT_MISSIONS, calculateExperienceDuration } from "@/constants";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
@@ -186,9 +186,18 @@ function About() {
                                                 whileInView={{ opacity: 1 }}
                                                 initial={{ opacity: 0 }}
                                                 transition={{ duration: 1 }}
-                                                className="w-full max-w-xl md:w-1/3">
-                                                <p className="mb-2 text-base md:text-sm lg:text-base text-stone-300">
-                                                    {exp.timespan}
+                                                className="w-full max-w-xl md:w-1/3 mb-4 md:pt-1">
+                                                <p className="text-base md:text-sm lg:text-base text-stone-300">
+                                                    {exp.startTime}&nbsp;{'-'}&nbsp;{exp.endTime.trim() ? exp.endTime : 'Present'}
+                                                </p>
+                                                <p key={index} className="text-base md:text-sm lg:text-base text-stone-500">
+                                                    {calculateExperienceDuration(exp.startTime, exp.endTime).years > 0 && (
+                                                        <>
+                                                            {calculateExperienceDuration(exp.startTime, exp.endTime).years}&nbsp;{'yrs'}&nbsp;
+                                                        </>
+                                                    )}
+                                                    {calculateExperienceDuration(exp.startTime, exp.endTime).months}
+                                                    &nbsp;{'mos'}
                                                 </p>
                                             </motion.div>
                                             <motion.div

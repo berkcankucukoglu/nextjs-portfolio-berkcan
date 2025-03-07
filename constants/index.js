@@ -17,14 +17,14 @@ import geomesLogo from '../public/assets/certifications/geomes_logo.webp';
 import motLogo from '../public/assets/certifications/ministry_of_transport_and_infrastructure_turkey_logo.webp';
 import wissenLogo from '../public/assets/certifications/wissen_teknoloji_logo.webp';
 
-export const SITE_LAST_UPDATE_TIME = `17 Nov 2024`;
+export const SITE_LAST_UPDATE_TIME = `8 Mar 2025`;
 export const SITE_BASE_URL = `https://berkcankucukoglu.com`;
 
 export const USER_INFO = {
   name: 'Berkcan',
   surname: 'Küçükoğlu',
   image: profilePicture,
-  title: 'Full Stack Developer',
+  title: 'Software Developer',
   contactInfo: [
     {
       fieldName: 'Email',
@@ -59,7 +59,8 @@ export const EXTERNAL_LINKS = [
 
 export const EXPERIENCES = [
   {
-    timespan: 'Jun 2024 - Present',
+    startTime: 'Jun 2024',
+    endTime: '',
     role: 'Full Stack Developer',
     company: 'Faturamatik Elektronik Para ve Ödeme Kuruluşu',
     description: `I’m currently a full-stack developer on the sigortalarburada.com project, building an insurance portal to improve customer experience and streamline policy management.`,
@@ -72,10 +73,11 @@ export const EXPERIENCES = [
     ],
   },
   {
-    timespan: 'Apr 2023 - Feb 2024',
+    startTime: 'Apr 2023',
+    endTime: 'Feb 2024',
     role: 'Full Stack Developer',
     company: 'DISC Akademi Eğitim ve Yazılım',
-    description: `I had the privilege of working with a prominent HR company renowned for its comprehensive approach to personality tests and talent assessments. As a full-stack developer, I actively contributed to the development of the 'Yetenex' project, a dynamic job portal with application tracking system(ATS).`,
+    description: `I had the privilege of working with a prominent HR company renowned for its comprehensive approach to personality tests and talent assessments. As a full-stack developer, I actively contributed to the development of the 'Yetenex' project, a dynamic job portal and application tracking system(ATS).`,
     technologies: [
       'C#',
       '.NET Core',
@@ -86,10 +88,11 @@ export const EXPERIENCES = [
     ],
   },
   {
-    timespan: 'Aug 2022 - Mar 2023',
+    startTime: 'Aug 2022',
+    endTime: 'Mar 2023',
     role: 'Contract - Trainee',
     company: 'Wissen Akademie',
-    description: `I completed a semester long course that covered algorithms, programming with C#, GitHub version control, front-end technologies (HTML, CSS, Bootstrap, JavaScript), database management with MsSQL, ADO.NET, Entity Framework, design patterns like Singleton and Factory, and SOLID principles.`,
+    description: `I completed a semester long course that covered Algorithms, Programming with C#, GitHub version control, Front-end Technologies (HTML, CSS, Bootstrap, JavaScript), Database Management with MsSQL, ADO.NET, Entity Framework, design patterns like Singleton and Factory, and SOLID principles.`,
     technologies: [
       'C#',
       '.NET Core',
@@ -104,10 +107,11 @@ export const EXPERIENCES = [
     ],
   },
   {
-    timespan: 'Dec 2019 – Jun 2022',
+    startTime: 'Dec 2019',
+    endTime: 'Jun 2022',
     role: 'Transportation Engineer',
     company: 'Emay International Engineering & Consulting',
-    description: `Applied BIM knowledge in various civil and transportation engineering projects. Participated in international meetings and negotiations. Notable contributions included work with the Istanbul Metro-Rail Systems Design Group, as well as producing architectural detailing, technical drawings, and presentations.`,
+    description: `Applied BIM knowledge in various Civil and Transportation Engineering projects. Participated in international meetings and negotiations. Notable contributions included work with the Istanbul Metro-Rail Systems Design Group, as well as producing architectural detailing, technical drawings, and presentations.`,
     technologies: [
       'BIM',
       'business analysis',
@@ -118,7 +122,8 @@ export const EXPERIENCES = [
     ],
   },
   {
-    timespan: 'Oct 2018 – Dec 2019',
+    startTime: 'Oct 2018',
+    endTime: 'Dec 2019',
     role: 'Civil Engineer',
     company: 'Prizma Engineering',
     description: `Specialized in traffic safety planning and signage for highway design projects. Conducted and planned drainage system analysis on junctions.`,
@@ -229,10 +234,10 @@ export const ABOUT_MISSIONS = [
 
 export const HERO_CONTENT = [
   {
-    text: `My name is Berkcan Küçükoğlu, and I blend an engineering foundation with a focus on software development. This transition allows me to bring a unique perspective to my work in developing technology-driven solutions, combining my engineering expertise with software skills.`,
+    text: `My name is Berkcan Küçükoğlu, and I blend an Engineering foundation with a focus on Software Development. This transition allows me to bring a unique perspective to my work in developing technology-driven solutions, combining my Engineering expertise with Software skills.`,
   },
   {
-    text: `Currently, I’m working as a software developer. Before moving into software, I gained valuable experience as a transportation engineer in both technical offices and on-site settings, where I developed strong project management and workflow skills.`,
+    text: `Currently, I’m working as a Software Developer. Before moving into software, I gained valuable experience as a Transportation Engineer in both technical offices and on-site settings, where I developed strong project management and workflow skills.`,
   },
 ];
 
@@ -320,4 +325,20 @@ function getYear() {
   const year = today.getFullYear();
 
   return `${year}`;
+}
+
+export function calculateExperienceDuration(sTime, eTime) {
+  const sDate = new Date(sTime + ' 1');
+  // Use current date if null or empty
+  const eDate = eTime?.trim() ? new Date(eTime + ' 1') : new Date();
+
+  let totalMonths =
+    (eDate.getFullYear() - sDate.getFullYear()) * 12 +
+    (eDate.getMonth() - sDate.getMonth()) +
+    1;
+
+  const years = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+
+  return { years, months };
 }
