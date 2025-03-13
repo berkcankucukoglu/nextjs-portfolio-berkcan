@@ -19,7 +19,7 @@ const buttonVariants = cva(
       size: {
         default: "h-10 rounded-full px-6",
         sm: "h-9 rounded-md px-6",
-        lg: "h-11 rounded-md px-8 text-sm uppercase tracking-[2px]",
+        lg: "h-11 rounded-md px-7 text-sm uppercase tracking-[2px]",
         icon: "h-10 w-10",
         back_to_top: "h-full w-full rounded-full p-3",
         outline_tab: "h-12 rounded-lg p-3"
