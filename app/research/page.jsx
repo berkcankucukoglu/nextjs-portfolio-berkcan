@@ -28,7 +28,7 @@ function Research() {
                     <div className="w-full xl:w-1/2 xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
                         <div className='flex flex-col gap-8 h-1/2'>
                             {/* outline num */}
-                            <h2 className="capitalize text-5xl leading-none font-extrabold text-transparent text-outline">
+                            <h2 className="capitalize text-4xl xs:text-5xl leading-none font-extrabold text-white tracking-wide">
                                 {research.category}
                             </h2>
                             {/* category */}
@@ -74,7 +74,6 @@ function Research() {
                                         <div className='h-[460px] relative group flex justify-center items-center bg-stone-600 rounded-xl'>
                                             {/* overlay */}
                                             <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'>
-
                                             </div>
                                             {/* image */}
                                             <div className='relative w-full h-full rounded-xl'>
