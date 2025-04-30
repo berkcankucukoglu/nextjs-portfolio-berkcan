@@ -328,9 +328,19 @@ function getYear() {
 }
 
 export function calculateExperienceDuration(sTime, eTime) {
-  const sDate = new Date(sTime + ' 1');
-  // Use current date if null or empty
-  const eDate = eTime?.trim() ? new Date(eTime + ' 1') : new Date();
+  const parseDate = (str) => {
+    const [monthStr, yearStr] = str.split(' ');
+    const month = new Date(`${monthStr} 1, 2000`).getMonth();
+    const year = parseInt(yearStr, 10);
+    return new Date(year, month);
+  };
+
+  const sDate = parseDate(sTime);
+  const eDate = eTime?.trim() ? parseDate(eTime) : new Date();
+
+  if (isNaN(sDate) || isNaN(eDate)) {
+    return { years: 0, months: 0 };
+  }
 
   let totalMonths =
     (eDate.getFullYear() - sDate.getFullYear()) * 12 +
