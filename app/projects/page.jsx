@@ -29,7 +29,7 @@ function Projecs() {
                                     initial={{ opacity: 0 }}
                                     transition={{ duration: 0.75 }}
                                     className="w-full h-full flex flex-col">
-                                    <h2 className="bg-gradient-to-r from-stone-300 to-accent bg-clip-text text-4xl tracking-tight text-transparent leading-none capitalize">{project.title}</h2>
+                                    <h2 className="bg-gradient-to-r from-stone-300 to-accent bg-clip-text text-4xl tracking-tight text-transparent leading-none pb-1">{project.title}</h2>
                                     {/* image */}
                                     <motion.div
                                         initial={{ opacity: 0 }}
@@ -84,7 +84,7 @@ function Projecs() {
                                     transition={{ duration: 0.75 }}
                                     className="w-full h-full flex flex-col">
                                     <h2
-                                        className="bg-gradient-to-r from-stone-300 to-accent bg-clip-text text-4xl tracking-tight text-transparent leading-none capitalize">
+                                        className="bg-gradient-to-r from-stone-300 to-accent bg-clip-text text-4xl tracking-tight text-transparent leading-none pb-1">
                                         {project.title}
                                     </h2>
                                     {/* image */}
